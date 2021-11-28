@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Courier Primer",
+    "version": "1.0.0",
+    "description": "Changes the font on every website to Courier Prime",
+    "short_name": "Makes everything Courier Prime",
+    "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>", "tabs"],
+    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["css/background.css"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Courier Primer",
+      "default_icon": {
+        "16": "images/icon.png",
+        "32": "images/icon.png"
+      }
+    }
+   }
